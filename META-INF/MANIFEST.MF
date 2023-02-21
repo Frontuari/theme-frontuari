@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: iDempiere Frontuari Theme
+Bundle-SymbolicName: net.frontuari.theme;singleton:=true
+Bundle-Version: 9.0.0.qualifier
+Bundle-Vendor: Frontuari, C.A. <https://frontuari.net>
+Fragment-Host: org.adempiere.ui.zk
+Automatic-Module-Name: net.frontuari.theme
+Bundle-RequiredExecutionEnvironment: JavaSE-11
