@@ -6,5 +6,5 @@
 
 	<!-- this js module doesn't actually exists and it is here for iceblue_c theme version -->
 	<!-- since loading of js module is on demand, it doesn't cause any error as long as you don't try to load it -->
-	<javascript-module name="idempiere.theme.frontuari" version="202301101104" />
+	<javascript-module name="net.frontuari.theme" version="202301101104" />
 </language>

@@ -23,7 +23,7 @@ public class FTUHeaderPanel extends HeaderPanel {
         	try {
 				org.zkoss.image.Image logo = ThemeManager.getClientWebLogo();
 				if (logo != null) { 
-                    image.setContent(logo); 
+                    image.setContent(logo);
                 } else { 
                 	image.setSrc(ThemeManager.getSmallLogo());
                 } 
