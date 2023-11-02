@@ -39,6 +39,12 @@ div.wc-modal, div.wc-modal-none, div.wc-highlighted, div.wc-highlighted-none {
 	background-color: transparent;
 }
 
+.wpos-window > .z-window-header {
+	font-family: 'Montserrat' !important;
+	background-color: #275597 !important;
+	text-align: center;
+}
+
 .z-window-overlapped, .z-window-popup, .z-window-modal, .z-window-highlighted, 
 .embedded-dialog .z-window-embedded
 {
