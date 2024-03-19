@@ -16,12 +16,21 @@
 }
 
 .desktop-header {
-	background-color: #E4E4E4;
+	background-color: #9F4C30;
 	width: 100%;
 	height: 46px;
 	border-bottom: 1px solid #C5C5C5 !important;
 	padding-left: 4px;
 }
+
+.desktop-header-font.z-label {
+	color: white;
+}
+
+.desktop-header-font > .z-toolbarbutton-content {
+	color: white;
+}
+
 .desktop-header.mobile {
 	height: 36px;
 	padding: 4px 4px;

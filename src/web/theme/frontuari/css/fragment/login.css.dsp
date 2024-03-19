@@ -3,7 +3,7 @@
 }
 
 .login-window .z-window-content {
-	background-color: #E5E5E5;
+	background-color: #9F4C30;
 }
 
 .login-box-body {
@@ -65,9 +65,21 @@
 	width: 40%;
 }
 
+.login-label > .z-label {
+	color: white;
+}
+
+.login-label > .z-div > .z-label {
+	color: white;
+}
+
 .login-field {
 	text-align: left;
 	width: 55%;
+}
+
+.login-field > .z-checkbox > .z-checkbox-content {
+	color: white;
 }
 
 .login-btn {
