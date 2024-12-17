@@ -56,3 +56,4 @@
 
 .kpi-inline {
 	display: inline;
+}
