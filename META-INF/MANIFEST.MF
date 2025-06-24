@@ -2,8 +2,10 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: iDempiere Frontuari Theme
 Bundle-SymbolicName: net.frontuari.theme
-Bundle-Version: 11.0.0.qualifier
+Bundle-Version: 12.0.0.qualifier
+Eclipse-BundleShape: dir
 Bundle-Vendor: Frontuari, C.A. <https://frontuari.net>
 Fragment-Host: org.adempiere.ui.zk
 Automatic-Module-Name: net.frontuari.theme
 Bundle-RequiredExecutionEnvironment: JavaSE-17
+Jetty-WarPrependFragmentResourcePath: /

@@ -1,92 +1,23 @@
-.z-button {
-  display: inline-block;
-  margin: 0px;
+<%-- customization of buttons --%>
+.z-button, .z-button-os {
+  display: inline-flex;
+  align-items: center;
   padding: 4px 20px;
-  font-size: 12px;
-  line-height: 20px;
-  text-align: center;
-  vertical-align: middle;
+  justify-content: center;
   cursor: pointer;
-  background-color: #f5f5f5;
-  background-image: -moz-linear-gradient(top, #ffffff, #e6e6e6);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6));
-  background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6);
-  background-image: -o-linear-gradient(top, #ffffff, #e6e6e6);
-  background-image: linear-gradient(to bottom, #ffffff, #e6e6e6);
-  background-repeat: repeat-x;
-  border: 1px solid #cccccc;
-  border-color: #e6e6e6 #e6e6e6 #bfbfbf;
-  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  border-bottom-color: #b3b3b3;
-  -webkit-border-radius: 4px;
-     -moz-border-radius: 4px;
-          border-radius: 4px;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe6e6e6', GradientType=0);
-  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
-  zoom: 1;
-  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
-     -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
-          box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  gap: 5px;
+}
+.z-button-os {
+	border-radius: 4px;
+}
+.z-button-os:hover {
+    color: #FFFFFF;
+    border-color: transparent;
+    background-color: #7ac8ff;
 }
 
-.wpos-button.z-button {
-  border-radius: 6px;
-  transition: all 0.3s ease 0s;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-}
-
-.wpos-button.z-button:hover {
-  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
-  transform: translateY(-0.25em);
-}
-
-.z-button {
-	margin: 0px !important;
-}
-
-.z-button-hover,
-.z-button-focus,
-.z-button-click,
-.z-button-disabled {
-  color: #333333;
-  background-color: #e6e6e6;
-}
-
-.z-button-click {
-  background-color: #cccccc \9;
-}
-
-.z-button-hover,
-.z-button-focus {
-  color: #333333;
-  text-decoration: none;
-  background-position: 0 -15px;
-  -webkit-transition: background-position 0.1s linear;
-     -moz-transition: background-position 0.1s linear;
-       -o-transition: background-position 0.1s linear;
-          transition: background-position 0.1s linear;
-}
-
-.z-button-focus {
-  outline: 5px auto -webkit-focus-ring-color;
-}
-
-.z-button-click {
-  background-image: none;
-  outline: 0;
-  -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
-     -moz-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
-          box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
-}
-
-.z-button-disabled {
-  cursor: default;
-  background-image: none;
-  opacity: 0.65;
-  filter: alpha(opacity=65);
-  -webkit-box-shadow: none;
-     -moz-box-shadow: none;
-          box-shadow: none;
+.z-button:focus {
+    border-color: transparent;
 }
 
 .z-button.btn-small {
@@ -96,17 +27,13 @@
 	padding: 2px 10px;
 }
 
-.z-button-disabled {
-	color: black; cursor: default; opacity: .6; -moz-opacity: .6; -khtml-opacity: .6; filter: alpha(opacity=60);
-}
-
 .img-btn img {
 	height: 22px;
 	width: 22px;
 	background-color: transparent;
 }
 
-.txt-btn img, .small-img-btn img {
+.txt-btn img, .small-img-btn img, .img-txt-btn img {
 	height: 16px;
 	width: 16px;
 	background-color: transparent;
@@ -121,8 +48,22 @@
 	text-shadow: 0px 1px 2px #888;
 }
 
-.z-button [class^="z-icon-"],
-.z-button-os [class^="z-icon-"]{
+.btn-cancel, .btn-help {
+    background: #f1f1f1;
+    color: #111111;
+}
+
+.btn-cancel:hover, .btn-help:hover {
+    background: #e5e5e5;
+    color: #1d1d1d;
+}
+
+.z-icon-Help, .z-icon-Cancel {
+    color: #111111 !important;
+}
+
+.z-button [class^="z-icon-"][disabled],
+.z-button-os [class^="z-icon-"][disabled]{
 	font-size: larger;
 	color: #333;	
 	padding-left: 2px;
@@ -140,38 +81,18 @@
 .z-button.small-toolbarbutton [class^="z-icon-"] {
 	font-size: 12px;
 }
-.z-button {
-	vertical-align: middle;
-	text-align: center;
-}
 .btn-ok.z-button [class^="z-icon-"]:before {
-	color: green;	
-}
-.btn-cancel.z-button [class^="z-icon-"]:before {
-	color: red;	
+	color: white;	
 }
 
-.btn-negate.z-button {
-	background: none;
-	border: none;
-	margin: 0px !important;
-	padding: 0px;
-	min-width: 16px;
-	width: 16px;	
-	height: 10px;
-	min-height:10px;
-	font-size: 14px;
-	font-weight: lighter;		
-	position: absolute;
-	top: 5px;
-	right: 25px; 	
+.z-combobox-button, .z-bandbox-button, .z-datebox-button, .z-timebox-button,
+ .z-spinner-button, .z-doublespinner-button {
+	vertical-align: top;
 }
-.btn-negate.z-button:active, .btn-negate.z-button:focus {
-	border: none;
-	box-shadow: none;
+.z-bandbox-button [class*="z-icon-"], .z-combobox-button [class*="z-icon-"] {
+	font-size: 16px;
 }
-.btn-negate.z-button [class^="z-icon-"] {
-	font-size: 14px;
-	padding: 0px;
-	line-height: 14px;
+
+.mobile .login-btn {
+    font-size: 0px !important;
 }

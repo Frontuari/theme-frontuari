@@ -11,7 +11,7 @@ html,body {
 	width: 100%;
 	background-color: #D4E3F4;
 	color: #333;
-	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
 	overflow: hidden;
 }
 
@@ -20,7 +20,7 @@ html,body {
 }
 
 [class*="z-"]:not([class*="z-icon-"]):not([class*="z-group-icon-"]) {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
 }
 @media screen and (min-device-width: 2500px) {
 	[class*="z-"]:not([class*="z-icon-"]):not([class*="z-group-icon-"]) {
@@ -61,15 +61,9 @@ table.z-vbox > tbody > tr > td > table {
 	width: 100%;	
 }
 
-<%-- workflow activity --%>
-.workflow-activity-form {
-}
-.workflow-panel-table {
-	border: 0px;
-}
-
-<%-- payment form --%>
-.payment-form-content {
+<%-- decorate file drop area --%>
+.attachment-drag-entered {
+    border: 5px dashed #3fb900 !important;
 }
 
 <c:include page="fragment/login.css.dsp" />
@@ -128,7 +122,7 @@ table.z-vbox > tbody > tr > td > table {
 
 <c:include page="fragment/font-icons.css.dsp" />
 
-<c:include page="fragment/drag-drop-attachment.css.dsp" />
+<c:include page="fragment/keikai.css.dsp" />
 
 <c:include page="fragment/gadget-kpi.css.dsp" />
 
